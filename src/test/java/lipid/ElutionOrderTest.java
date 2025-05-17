@@ -121,7 +121,7 @@ public class ElutionOrderTest {
      * -> PG < PE < PI < PA < PS << PC.
      */
     @Test
-    public void score1BasedOnLipidType() {
+    public void score1BasedOnRTLipidType() {
         // Assume lipids already annotated
         LOG.info("Creating RuleUnit");
         LipidScoreUnit lipidScoreUnit = new LipidScoreUnit();
@@ -167,7 +167,7 @@ public class ElutionOrderTest {
      * -> PG < PE < PI < PA < PS << PC.
      */
     @Test
-    public void negativeScoreBasedOnRTNumberOfCarbons() {
+    public void negativescore1BasedOnRTLipidType() {
         // Assume lipids already annotated
         LOG.info("Creating RuleUnit");
         LipidScoreUnit lipidScoreUnit = new LipidScoreUnit();
@@ -211,7 +211,7 @@ public class ElutionOrderTest {
      * carbons is the same. The higher the number of double bonds, the shorter the RT.
      */
     @Test
-    public void negativeScoreBasedOnRTDoubleBonds() {
+    public void negativescore1BasedOnRTDoubleBonds() {
         // Assume lipids already annotated
         LOG.info("Creating RuleUnit");
         LipidScoreUnit lipidScoreUnit = new LipidScoreUnit();
@@ -254,7 +254,7 @@ public class ElutionOrderTest {
      * double bonds is the same. The larger the number of carbons, the longer the RT.
      */
     @Test
-    public void negativeScoreBasedOnLipidType() {
+    public void negativescore1BasedOnRTCarbonCount() {
         // Assume lipids already annotated
         LOG.info("Creating RuleUnit");
         LipidScoreUnit lipidScoreUnit = new LipidScoreUnit();
